@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Transaksi | VokaBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <main class="container">
+        <header class="page-head">
+            <div><small>RIWAYAT TRANSAKSI</small>
+                <h1>History Transaksi</h1>
+                <p class="muted">Riwayat pesanan yang tersedia pada data demo.</p>
+            </div>
+        </header>
+        <section class="panel"><input id="historySearch" placeholder="Cari nama, nomor DO, ekspedisi…">
+            <div class="table-wrap spaced">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No. DO</th>
+                            <th>Nama</th>
+                            <th>Pembayaran</th>
+                            <th>Ekspedisi</th>
+                            <th>Tanggal</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyRows"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Katalog | VokaBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <main class="container">
+        <header class="page-head">
+            <div><small>KOLEKSI BUKU</small>
+                <h1>Informasi Stok / Katalog</h1>
+                <p class="muted">Data ditampilkan dari variabel dataKatalogBuku pada data.js.</p>
+            </div><button class="btn primary" id="showAdd">＋ Tambah buku</button>
+        </header>
+        <div class="stats">
+            <article><small>Judul buku</small><strong id="bookCount">0</strong></article>
+            <article><small>Total stok</small><strong id="stockCount">0</strong></article>
+            <article><small>Stok menipis</small><strong id="lowStock">0</strong></article>
+        </div>
+        <div class="toolbar"><input id="searchBook" placeholder="Cari judul atau kode buku…"><select id="filterType">
+                <option value="">Semua jenis</option>
+                <option>Buku Ajar</option>
+            </select></div>
+        <section class="books" id="books"></section>
+        <section class="panel hidden" id="addPanel">
+            <header class="section-head">
+                <h2>Tambah buku baru</h2><button id="hideAdd" class="link">Tutup ×</button>
+            </header>
+            <form id="addBookForm" class="form-grid">
+                <div><label>Kode barang</label><input name="kodeBarang" required></div>
+                <div><label>Nama buku</label><input name="namaBarang" required></div>
+                <div><label>Jenis barang</label><input name="jenisBarang" value="Buku Ajar" required></div>
+                <div><label>Edisi</label><input name="edisi" value="1" required></div>
+                <div><label>Stok</label><input name="stok" type="number" min="0" required></div>
+                <div><label>Harga (angka)</label><input name="harga" type="number" min="1" required></div><button
+                    class="btn primary">Simpan buku</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

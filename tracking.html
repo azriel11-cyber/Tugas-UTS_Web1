@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tracking | VokaBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <main class="container narrow">
+        <header class="page-head">
+            <div><small>LACAK PAKET</small>
+                <h1>Tracking Pengiriman</h1>
+                <p class="muted">Masukkan nomor Delivery Order untuk melihat detail.</p>
+            </div>
+        </header>
+        <section class="panel">
+            <form id="trackingForm"><label>Nomor Delivery Order</label>
+                <div class="search-row"><input id="doNumber" required placeholder="Contoh: 20230012"><button
+                        class="btn primary">Cari</button></div>
+            </form>
+            <p class="muted tiny">Nomor demo: 20230012 atau 20230013.</p>
+        </section>
+        <div id="trackingResult"></div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

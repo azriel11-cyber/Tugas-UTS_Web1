@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pemesanan | VokaBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <main class="container">
+        <header class="page-head">
+            <div><small>PEMESANAN BUKU</small>
+                <h1>Formulir Pemesanan</h1>
+                <p class="muted">Lengkapi informasi pemesan dan pembayaran.</p>
+            </div>
+        </header>
+        <form id="checkoutForm" class="checkout">
+            <section class="panel">
+                <h2>Informasi pemesan</h2>
+                <div class="form-grid">
+                    <div><label>Nama lengkap</label><input name="nama" required></div>
+                    <div><label>Email</label><input name="email" type="email" required></div>
+                    <div><label>Nomor telepon</label><input name="telepon" required></div>
+                    <div><label>Alamat pengiriman</label><input name="alamat" required></div>
+                </div>
+                <header class="section-head spaced">
+                    <h2>Daftar buku</h2><button type="button" id="addItem" class="btn outline">＋ Tambah buku</button>
+                </header>
+                <div id="items"></div>
+                <div class="total"><span>Total pembayaran</span><strong id="totalPrice">Rp 0</strong></div>
+            </section>
+            <aside class="panel">
+                <h2>Pembayaran & pengiriman</h2><label>Metode pembayaran</label><select name="pembayaran">
+                    <option>Transfer Bank</option>
+                    <option>E-Wallet</option>
+                    <option>COD</option>
+                </select><label class="spaced-label">Ekspedisi</label><select name="ekspedisi">
+                    <option>JNE</option>
+                    <option>Pos Indonesia</option>
+                    <option>J&T Express</option>
+                    <option>SiCepat</option>
+                </select><label class="spaced-label">Jenis paket</label><select name="paket">
+                    <option>Reguler</option>
+                    <option>Express</option>
+                    <option>Same Day</option>
+                </select><label class="spaced-label">Catatan</label><textarea name="catatan" rows="3"></textarea><button
+                    class="btn primary full spaced">Buat pesanan →</button>
+                <p class="muted tiny">Data disimpan di browser, bukan database.</p>
+            </aside>
+        </form>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard | VokaBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <main class="container">
+        <section class="hero">
+            <div><small>DASHBOARD VOKABOOK</small>
+                <h1 id="greeting">Selamat datang!</h1>
+                <p>Atur katalog, pesanan, dan pengiriman buku dari satu tempat.</p><a class="btn light"
+                    href="checkout.html">＋ Buat pesanan</a>
+            </div>
+            <div class="hero-mark">V<span>READ · LEARN · GROW</span></div>
+        </section>
+        <section class="stats">
+            <article><small>Total judul buku</small><strong id="totalBooks">0</strong></article>
+            <article><small>Total pesanan</small><strong id="totalOrders">0</strong></article>
+            <article><small>Dalam pengiriman</small><strong id="totalShipping">0</strong></article>
+        </section>
+        <header class="section-head">
+            <div><small>MENU UTAMA</small>
+                <h2>Jelajahi VokaBook</h2>
+            </div>
+        </header>
+        <section class="menu-grid"><a href="stok.html"><b>▤</b><span><strong>Informasi Stok /
+                        Katalog</strong><small>Lihat dan tambah koleksi buku.</small></span>↗</a><a
+                href="tracking.html"><b>⌁</b><span><strong>Tracking Pengiriman</strong><small>Periksa status paket
+                        pesanan.</small></span>↗</a><a href="laporan.html"><b>▥</b><span><strong>Laporan
+                        Pemesanan</strong><small>Kelola pesanan pelanggan.</small></span>↗</a><a
+                href="transaksi.html"><b>↺</b><span><strong>History Transaksi</strong><small>Lihat riwayat
+                        transaksi.</small></span>↗</a></section>
+        <section class="panel">
+            <h2>Pesanan contoh</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nomor DO</th>
+                            <th>Nama</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

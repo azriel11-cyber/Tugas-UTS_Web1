@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VokaBook | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+    <main class="login-layout">
+        <section class="intro"><a class="brand" href="index.html"><b>V</b> vokabook<span>.</span></a><small>TOKO BUKU
+                ONLINE</small>
+            <h1>Ilmu baru,<br><em>peluang baru.</em></h1>
+            <p>Temukan buku pilihan untuk menemani perjalanan belajar dan berkembangmu.</p>
+        </section>
+        <section class="login-card"><small>SELAMAT DATANG</small>
+            <h2>Masuk ke VokaBook</h2>
+            <p class="muted">Gunakan salah satu akun demo dari data.js.</p>
+            <form id="loginForm"><label for="email">Email</label><input id="email" type="email" required
+                    placeholder="nama@email.com"><label for="password">Password</label><input id="password"
+                    type="password" required placeholder="Password"><button class="btn primary full">Login →</button>
+            </form>
+            <div class="row-links"><button data-modal="forgotModal" class="link">Lupa Password?</button><span>Belum
+                    punya akun? <button data-modal="registerModal" class="link">Daftar</button></span></div>
+            <div class="hint"><b>Akun demo</b><br>rina@gmail.com / rina123<br>agus@gmail.com / agus123<br>siti@gmail.com
+                / siti123</div>
+        </section>
+    </main>
+    <div class="modal-backdrop" id="forgotModal">
+        <section class="modal"><button class="close">×</button><small>BANTUAN AKUN</small>
+            <h2>Lupa password?</h2>
+            <p>Masukkan email untuk simulasi pemulihan akun.</p>
+            <form id="forgotForm"><label>Email</label><input type="email" required><button
+                    class="btn primary full">Kirim instruksi</button></form>
+        </section>
+    </div>
+    <div class="modal-backdrop" id="registerModal">
+        <section class="modal"><button class="close">×</button><small>GABUNG VOKABOOK</small>
+            <h2>Daftar akun</h2>
+            <form id="registerForm"><label>Nama lengkap</label><input required><label>Email</label><input type="email"
+                    required><label>Password</label><input type="password" minlength="6" required><button
+                    class="btn primary full">Daftar</button></form>
+        </section>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
